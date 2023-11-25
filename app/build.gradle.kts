@@ -49,6 +49,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     // Android
     implementation(libs.ax.core.ktx)
@@ -61,6 +65,7 @@ dependencies {
     implementation(libs.ax.compose.ui.graphics)
     implementation(libs.ax.compose.ui.tooling.preview)
     implementation(libs.ax.compose.material3)
+    implementation(libs.ax.navigation.compose)
     debugImplementation(libs.ax.compose.ui.tooling)
     debugImplementation(libs.ax.compose.ui.test.manifest)
 
